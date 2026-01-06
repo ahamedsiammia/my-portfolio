@@ -18,7 +18,7 @@ const Header = () => {
   // Track active section based on scroll position
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'skills', 'education', 'projects', 'contact'];
+      const sections = ['hero', 'about', 'services', 'skills', 'education', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100; // Offset for header height
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -39,9 +39,10 @@ const Header = () => {
   const menuItems = [
     { name: 'Home', id: 'hero' },
     { name: 'About', id: 'about' },
+    { name: 'Services', id: 'services' },
     { name: 'Skills', id: 'skills' },
     { name: 'Education', id: 'education' },
-    { name: 'Portfolio', id: 'projects' },
+    { name: 'Projects', id: 'projects' },
     { name: 'Contact', id: 'contact' }
   ];
 

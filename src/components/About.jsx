@@ -289,49 +289,10 @@ const About = () => {
           </motion.div>
         </motion.div>
 
-        {/* Button */}
-        <motion.button
-          onClick={() => {
-            // Create a downloadable CV file
-            const cvContent = `
-SIAM AHAMED - Frontend Developer
-
-Contact Information:
-- Email: md7559263@gmail.com
-- Phone: 01956618840
-- WhatsApp: 01862754769
-- LinkedIn: https://www.linkedin.com/in/siam-ahamed/
-- GitHub: https://github.com/ahamedsiammia
-
-Experience: 2+ Years
-Completed Projects: 15+
-Companies Worked: 5+
-
-Skills:
-Frontend: HTML, CSS, JavaScript, React, Tailwind CSS, Bootstrap
-Backend: Node.js, Express, MongoDB
-Tools: Firebase
-
-Education:
-- High School: Raindiya High School (SSC)
-- Higher Education: Mymensingh Polytechnic Institute (Computer Science & Technology, 4th Semester - Ongoing)
-
-Projects:
-1. Blood Donation Application
-2. Car Sport
-3. Hero Apps
-            `;
-            
-            const blob = new Blob([cvContent], { type: 'text/plain' });
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'Siam_Ahamed_CV.txt';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            window.URL.revokeObjectURL(url);
-          }}
+        {/* CV Download Button */}
+        <motion.a
+          href="/siam_ahamed_cv.pdf"
+          download="siam_ahamed_cv.pdf"
           className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
           variants={itemVariants}
           whileHover={{ 
@@ -351,8 +312,8 @@ Projects:
             transition={{ duration: 1.5, repeat: Infinity }}
           >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
-          </ motion.svg>
-        </motion.button>
+          </motion.svg>
+        </motion.a>
 
         {/* Skills Preview */}
         <motion.div
@@ -373,6 +334,7 @@ Projects:
           ))}
         </motion.div>
       </motion.div>
+      
     </section>
   );
 };
