@@ -21,7 +21,11 @@ const Skills = () => {
   ];
 
   const toolsSkills = [
-    { icon: 'fa-solid fa-fire', name: 'Firebase', color: 'text-orange-500', bgColor: 'bg-orange-100' }
+    { icon: 'fa-solid fa-fire', name: 'Firebase', color: 'text-orange-500', bgColor: 'bg-orange-100' },
+    { icon: 'fa-solid fa-code', name: 'VS Code', color: 'text-blue-600', bgColor: 'bg-blue-100' },
+    { icon: 'fa-brands fa-git-alt', name: 'Git', color: 'text-red-600', bgColor: 'bg-red-100' },
+    { icon: 'fa-brands fa-github', name: 'GitHub', color: 'text-gray-800', bgColor: 'bg-gray-100' },
+    { icon: 'fa-solid fa-palette', name: 'Canva', color: 'text-purple-600', bgColor: 'bg-purple-100' }
   ];
 
   // Animation variants
@@ -310,10 +314,13 @@ const Skills = () => {
             Tools & Services
           </motion.h3>
           
-          <div className="flex justify-center relative z-10">
-            {toolsSkills.map((skill, index) => (
+          <div className="grid grid-cols-2 gap-4 text-center relative z-10">
+            {toolsSkills.slice(0, 4).map((skill, index) => (
               <SkillIcon key={skill.name} skill={skill} index={index} delay={1.5} />
             ))}
+            <div className="col-span-2 flex justify-center">
+              <SkillIcon skill={toolsSkills[4]} index={4} delay={1.5} />
+            </div>
           </div>
 
           {/* Additional decorative elements */}
