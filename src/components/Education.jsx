@@ -25,7 +25,7 @@ const Education = () => {
       institution: "Raindiya High School",
       degree: "Secondary School Certificate (SSC)",
       status: "Completed - GPA: A+",
-      year: "2020 - 2022",
+      year: "2021 - 2023",
       description: "Completed secondary education with strong foundation in mathematics, science, and computer studies. Achieved excellent academic performance with A+ grade.",
       icon: "fa-solid fa-school",
       color: "from-green-500 to-emerald-600",

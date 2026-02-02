@@ -223,8 +223,8 @@ const About = () => {
           in web technologies and UI / UX design, delivering quality work.
         </motion.p>
 
-        {/* Animated Stats */}
-        <motion.div 
+        {/* Animated Stats       show my expreance  */}
+        {/* <motion.div 
           className="flex gap-8"
           variants={itemVariants}
         >
@@ -287,7 +287,7 @@ const About = () => {
             </motion.h4>
             <p className="text-sm text-gray-500">Companies worked</p>
           </motion.div>
-        </motion.div>
+        </motion.div> */}
 
         {/* CV Download Button */}
         <motion.a

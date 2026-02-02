@@ -318,12 +318,7 @@ const Hero = () => {
         initial="hidden"
         animate="visible"
       >
-        <motion.p 
-          className="text-sm font-medium text-indigo-600"
-          variants={itemVariants}
-        >
-          Hello siam
-        </motion.p>
+     
         
         <motion.h2 
           className="text-4xl md:text-5xl font-bold min-h-[4rem] flex items-center"
