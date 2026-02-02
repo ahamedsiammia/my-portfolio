@@ -322,7 +322,7 @@ const Hero = () => {
           className="text-sm font-medium text-indigo-600"
           variants={itemVariants}
         >
-          Hello
+          Hello siam
         </motion.p>
         
         <motion.h2 
