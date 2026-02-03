@@ -268,9 +268,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16 mt-5 grid grid-cols-1 md:grid-cols-2 items-center gap-12 min-h-screen relative overflow-hidden">
-      
-      {/* Background Animation Elements */}
+    <section className="max-w-7xl mx-auto px-6 py-16 mt-5 grid grid-cols-1 md:grid-cols-2 items-center gap-12  relative overflow-hidden">
+
+      {/* Background Bubble Animation */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           className="absolute top-20 left-10 w-20 h-20 bg-indigo-200 rounded-full opacity-20"
@@ -307,6 +307,33 @@ const Hero = () => {
             duration: 4,
             repeat: Infinity,
             ease: "easeInOut"
+          }}
+        />
+        <motion.div
+          className="absolute top-1/2 right-10 w-14 h-14 bg-blue-200 rounded-full opacity-15"
+          animate={{
+            y: [0, -40, 0],
+            x: [0, -30, 0],
+            scale: [1, 1.1, 1],
+          }}
+          transition={{
+            duration: 7,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2
+          }}
+        />
+        <motion.div
+          className="absolute bottom-40 right-1/3 w-8 h-8 bg-teal-200 rounded-full opacity-25"
+          animate={{
+            rotate: [0, -360],
+            y: [0, -20, 0],
+          }}
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1.5
           }}
         />
       </div>
@@ -468,7 +495,7 @@ const Hero = () => {
             {/* Inner Border */}
             <div className="w-full h-full rounded-full bg-white p-1 shadow-inner">
               <motion.img 
-                src="https://i.ibb.co.com/Cpt9sm7N/IMG-0463.jpg" 
+                src="https://i.ibb.co.com/F4BNzQ7s/Gemini-Generated-Image-mp7wnwmp7wnwmp7w.png" 
                 alt="Siam" 
                 className="w-full h-full object-cover rounded-full"
                 initial={{ scale: 0.8, opacity: 0 }}
@@ -614,6 +641,7 @@ const Hero = () => {
         </motion.div>
       </motion.div>
     </section>
+   
   );
 };
 

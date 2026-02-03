@@ -108,7 +108,7 @@ const About = () => {
   return (
     <section 
       ref={ref}
-      className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative overflow-hidden"
+      className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative overflow-hidden"
     >
       {/* Background Animation Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -152,7 +152,7 @@ const About = () => {
           transition={{ duration: 0.3 }}
         >
           <motion.img
-            src="https://i.ibb.co.com/Ps7nk51V/Whats-App-Image-2025-06-29-at-11-36-10-41267729.jpg"
+            src="https://i.ibb.co.com/kgYTSjM3/Whats-App-Image-2025-06-29-at-11-36-10-6fdf4265.jpg"
             alt="About Siam"
             className="w-72 md:w-80 rounded-2xl shadow-2xl"
             animate={{
