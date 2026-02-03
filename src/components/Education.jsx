@@ -162,19 +162,7 @@ const Education = () => {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        <motion.h3 
-          className="text-indigo-600 font-medium text-base md:text-lg mb-2"
-          animate={{
-            color: ['#4f46e5', '#059669', '#7c3aed', '#4f46e5'],
-          }}
-          transition={{
-            duration: 4,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        >
-          Education
-        </motion.h3>
+
         <motion.h2 
           className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800"
           animate={{

@@ -124,14 +124,7 @@ const Services = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.h3 
-            className="text-indigo-600 font-medium mb-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-          >
-            Services
-          </motion.h3>
+
           <motion.h2 
             className="text-4xl md:text-5xl font-bold text-gray-800 mb-6"
             animate={{

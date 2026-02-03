@@ -153,19 +153,7 @@ const Projects = () => {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        <motion.h3 
-          className="text-indigo-600 font-medium"
-          animate={{
-            color: ['#4f46e5', '#7c3aed', '#ec4899', '#4f46e5'],
-          }}
-          transition={{
-            duration: 4,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        >
-          Projects
-        </motion.h3>
+
         <motion.h2 
           className="text-3xl md:text-4xl font-bold mt-2"
           animate={{
