@@ -301,7 +301,7 @@ const About = () => {
           }}
           whileTap={{ scale: 0.95 }}
         >
-          Download CV
+          Download CV 
           <motion.svg 
             xmlns="http://www.w3.org/2000/svg" 
             className="w-4 h-4" 
@@ -315,7 +315,7 @@ const About = () => {
           </motion.svg>
         </motion.a>
 
-        {/* Skills Preview */}
+        {/* Skills Preview  code */}
         <motion.div
           className="flex flex-wrap gap-2 pt-4"
           variants={itemVariants}
