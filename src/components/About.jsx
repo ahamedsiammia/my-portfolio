@@ -291,8 +291,8 @@ const About = () => {
 
         {/* CV Download Button */}
         <motion.a
-          href="/siam_ahamed_cv.pdf"
-          download="siam_ahamed_cv.pdf"
+          href="/Siam_Ahamed .pdf"
+          download="Siam_Ahamed .pdf"
           className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
           variants={itemVariants}
           whileHover={{ 
@@ -301,7 +301,7 @@ const About = () => {
           }}
           whileTap={{ scale: 0.95 }}
         >
-          Download CV 
+          Download Resume 
           <motion.svg 
             xmlns="http://www.w3.org/2000/svg" 
             className="w-4 h-4" 

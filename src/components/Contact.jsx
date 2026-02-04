@@ -100,11 +100,6 @@ ${formData.message}
       icon: 'fa-brands fa-github',
       link: 'https://github.com/ahamedsiammia',
       color: 'hover:text-gray-800 hover:bg-gray-100'
-    },
-    {
-      icon: 'fa-brands fa-discord',
-      link: '#',
-      color: 'hover:text-indigo-600 hover:bg-indigo-50'
     }
   ];
 
