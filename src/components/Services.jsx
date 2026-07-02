@@ -16,8 +16,8 @@ const Services = () => {
     },
     {
       icon: 'fa-solid fa-palette',
-      title: 'Frontend Development',
-      description: 'Create interactive UIs with React.js, Tailwind CSS, and Bootstrap; convert Figma/Adobe XD designs into functional applications.',
+      title: 'Full Stack Application Development',
+      description: 'Create interactive UIs with TypeScript, React.js, Tailwind CSS, Express.js,Postgres SQL,Prisma and Bootstrap; convert Figma/Adobe XD designs into functional applications.',
       color: 'from-purple-500 to-pink-500',
       iconBg: 'bg-purple-100',
       iconColor: 'text-purple-600'
@@ -25,7 +25,7 @@ const Services = () => {
     {
       icon: 'fa-solid fa-server',
       title: 'Backend & API Integration',
-      description: 'Develop RESTful APIs with Node.js & Express.js, and manage MongoDB databases.',
+      description: 'Develop RESTful APIs with Node.js & Express.js, and manage NeonDB , MongoDB databases.',
       color: 'from-green-500 to-emerald-500',
       iconBg: 'bg-green-100',
       iconColor: 'text-green-600'

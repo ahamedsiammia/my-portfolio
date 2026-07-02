@@ -152,7 +152,8 @@ const About = () => {
           transition={{ duration: 0.3 }}
         >
           <motion.img
-            src="https://i.ibb.co.com/kgYTSjM3/Whats-App-Image-2025-06-29-at-11-36-10-6fdf4265.jpg"
+            src="https://i.postimg.cc/sDMtyN5Q/IMG-2400-JPG-Copy-(2).jpg"
+            // src="https://i.ibb.co.com/kgYTSjM3/Whats-App-Image-2025-06-29-at-11-36-10-6fdf4265.jpg"
             alt="About Siam"
             className="w-72 md:w-80 rounded-2xl shadow-2xl"
             animate={{
@@ -177,7 +178,7 @@ const About = () => {
             transition={{ delay: 0.8, duration: 0.5 }}
             whileHover={{ scale: 1.1, rotate: 5 }}
           >
-            Frontend Dev
+            Full Stack Developer
           </motion.div>
         </motion.div>
       </motion.div>
@@ -211,7 +212,7 @@ const About = () => {
               ease: "easeInOut"
             }}
           >
-            Frontend Developer
+            Full Stack Developer
           </motion.span>
         </motion.h2>
         
@@ -219,8 +220,7 @@ const About = () => {
           className="text-gray-500 leading-relaxed max-w-lg"
           variants={itemVariants}
         >
-          Web developer with extensive knowledge and years of experience, working
-          in web technologies and UI / UX design, delivering quality work.
+          A passionate Full Stack Developer and CST student at Mymensingh Polytechnic Institute. I love turning ideas into functional web applications and creating clean, user-friendly digital experiences. My primary stack includes <span className='font-bold text-black'>TypeScript,React,  Node.js, Express.js, Prisma , Postgres SQL and  MongoDB</span>. I’m constantly learning and exploring new technologies to become a better developer every day.
         </motion.p>
 
         {/* Animated Stats       show my expreance  */}
@@ -315,24 +315,7 @@ const About = () => {
           </motion.svg>
         </motion.a>
 
-        {/* Skills Preview  code */}
-        <motion.div
-          className="flex flex-wrap gap-2 pt-4"
-          variants={itemVariants}
-        >
-          {['React', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind'].map((skill, index) => (
-            <motion.span
-              key={skill}
-              className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
-              initial={{ opacity: 0, scale: 0 }}
-              animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
-              transition={{ delay: 2 + index * 0.1 }}
-              whileHover={{ scale: 1.1, backgroundColor: "#e0e7ff" }}
-            >
-              {skill}
-            </motion.span>
-          ))}
-        </motion.div>
+
       </motion.div>
       
     </section>

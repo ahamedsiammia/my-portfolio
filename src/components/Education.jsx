@@ -11,7 +11,7 @@ const Education = () => {
       level: "Higher Education",
       institution: "Mymensingh Polytechnic Institute",
       degree: "Computer Science & Technology",
-      status: "4th Semester (Ongoing)",
+      status: "5th Semester (Ongoing)",
       year: "2023 - Present",
       description: "Pursuing diploma in Computer Science & Technology with focus on programming, web development, and software engineering principles.",
       icon: "fa-solid fa-graduation-cap",
